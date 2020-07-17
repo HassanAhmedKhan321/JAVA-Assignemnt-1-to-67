@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- -----------------------------------------CHAPTER 43-48------------------------------------>
+    <!-- //NO.1
+    <a href="#" onClick="alert('Hi');">Click</a>; -->
+
+
+
+    <!-- //NO.2
+    <h1 style="color: blue;">Mobile Phone LookUp</h1>
+    <img src="https://www.91-img.com/pictures/133188-v4-oppo-f11-mobile-phone-large-1.jpg" onclick="alert('Thanks for purchasing a mobile from us')" style="cursor: pointer;" alt="" width="150px">;
+    <img src="https://images-na.ssl-images-amazon.com/images/I/61Vcvy6chuL._SX679_.jpg" onclick="alert('Thanks for purchasing a mobile from us')" alt="" style="cursor: pointer;" width="210px">;
+    <img src="https://c.tribune.com.pk/2018/08/1787482-jcore_main_-1535182946.jpg" onclick="alert('Thanks for purchasing a mobile from us')" alt="" style="cursor: pointer;" width="315px">
+    <img src="https://www.skymartbw.com/wp-content/uploads/2018/11/Samsung-Galaxy-J2-Core-blue.png" onclick="alert('Thanks for purchasing a mobile from us')" alt="" style="cursor: pointer;"  width="220px"> -->
+
+
+
+    <!-- //NO.3
+    <script>
+        function SomeDeleteRowFunction(o) {
+            //no clue what to put here?
+            var p = o.parentNode.parentNode;
+            p.parentNode.removeChild(p);
+        }
+    </script>
+    <table>
+        <tr style="font-weight: bold;">
+            <td>Index</td>
+            <td>Name</td>
+            <td>Class</td>
+        </tr>
+        <tr>
+            <td>0</td>
+            <Td>Johne</Td>
+            <Td>10</Td>
+            <td><input type="button" value="Delete" onclick="SomeDeleteRowFunction(this)"></td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Doe</td>
+            <td>9</td>
+            <td><input type="button" value="Delete" onclick="SomeDeleteRowFunction(this)"></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Mark</td>
+            <td>10</td>
+            <td><input type="button" value="Delete" onclick="SomeDeleteRowFunction(this)"></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>James</td>
+            <td>8</td>
+            <td><input type="button" value="Delete" onclick="SomeDeleteRowFunction(this)"></td>
+        </tr>
+    </table> -->
+
+
+
+
+    <!-- //NO.4
+    <img src="https://manofmany.com/wp-content/uploads/2018/03/15-Best-Sports-Cars-Mercedes-AMG-GT.jpg" onMouseover="src='https://manofmany.com/wp-content/uploads/2018/03/15-Best-Sports-Cars.jpg'" onMouseout= "src ='https://manofmany.com/wp-content/uploads/2018/03/15-Best-Sports-Cars-Mercedes-AMG-GT.jpg'">
+    <script src="app.js"></script> -->
+
+
+
+
+    <!-- //NO.5
+    <!-- <script type="text/javascript">
+        var clicks = 0;
+        function onClick() {
+            clicks += 1;
+            document.getElementById("clicks").innerHTML = clicks;
+        };
+        </script>
+        <button type="button" onClick="onClick()">Increase</button>
+        <button type="button" onClick="onClick()">Decrease</button>
+        <p>Clicks: <a id="clicks">0</a></p> -->
+
+
+
+
+
+
+    <!-- ----------------------------------------Chapter 49-52 ------------------------------------------->
+
+
+    <!-- NO.1
+    <div id="messages">
+
+    </div> 
+    <div>
+    <h1 style="color: blueviolet;">SIGNUP FORM</h1>   
+    <input type="text" id="val" style="background-color: chartreuse;" placeholder="Enter your name">
+    <input type="text" id="val" style="background-color: chartreuse;" placeholder="Enter your email id">
+    <input type="text" id="val" style="background-color: chartreuse;" placeholder="Enter password">
+    <button onclick="addMessage()">SignUp</button>
+    </div>    -->
+
+
+    <!-- //NO.2
+    <p style="font-weight: bold; font-size: 40px;">Budget Android phones vs high-end Android mobiles</p>
+    <p id="slowLoris">
+        Pick a cheaper Android phone and you’ll still get a choice of thousands of apps and a great communication tool with excellent social networking options.
+        <a href="javascript:void(0);" onClick="expandLoris();"><em>Click for more.</em></a>
+    </p>
+    <script>
+        function expandLoris() {
+            var expandedParagraph = "Pick a cheaper Android phone and you’ll still get a choice of thousands of apps and a great communication tool with excellent social networking options.The main difference between cheaper Android phones and the most expensive models is that the former will typically feature lower-grade cameras and lower resolution screens, such as QVGA displays, whereas the latter will feature the latest, cutting-edge specifications.Less costly Android mobiles will also typically have less powerful processors. Consequently, cheaper Android phones may not run as fast or as smoothly and may be left out of the latest software updates because they're not powerful enough to run them. As well as Android mobile phones from HTC, Samsung, Sony Ericsson and Motorola, Google has brought phones to market that feature its own branding. These are the well-regarded Nexus range of Android smartphones.";
+            document.getElementById("slowLoris").innerHTML = expandedParagraph;
+        }
+
+    </script> -->
+
+
+    <!-- //NO.3
+    <style>
+        * {
+            font: 17px Calibri;
+        }
+
+        table {
+            width: 70%;
+        }
+
+        table,
+        th,
+        td {
+            border: solid 1px #DDD;
+            border-collapse: collapse;
+            padding: 2px 3px;
+            text-align: center;
+        }
+    </style>
+
+    <body onload="createTable()">
+
+        <h3>
+            Click the "Add New Row" button to add a new row to the table. <br> Enter values in each row and press the
+            "Submit Data" button.
+        </h3>
+
+        <p>
+            <input type="button" id="addRow" value="Add New Row" onclick="addRow()" />
+        </p>
+
+        <div id="cont"></div> <!-- the container to add the TABLE -->
+
+    <!-- <p>
+            <input type="button" id="bt" value="Submit Data" onclick="submit()" />
+        </p>
+
+        <p id='output'></p>
+
+
+        <script>
+            var arrHead = new Array();
+            arrHead = ['', 'Index', 'Name', 'Class'];
+            function createTable() {
+                var empTable = document.createElement('table');
+                empTable.setAttribute('id', 'empTable');
+                var tr = empTable.insertRow(-1);
+                for (var h = 0; h < arrHead.length; h++) {
+                    var th = document.createElement('th');
+                    th.innerHTML = arrHead[h];
+                    tr.appendChild(th);
+                }
+                var div = document.getElementById('cont');
+                div.appendChild(empTable);
+            }
+            function addRow() {
+                var empTab = document.getElementById('empTable');
+
+                var rowCnt = empTab.rows.length;
+                var tr = empTab.insertRow(rowCnt);
+                tr = empTab.insertRow(rowCnt);
+
+                for (var c = 0; c < arrHead.length; c++) {
+                    var td = document.createElement('td');
+                    td = tr.insertCell(c);
+
+                    if (c == 0) {
+
+                        var button = document.createElement('input');
+                        button.setAttribute('type', 'button');
+                        button.setAttribute('value', 'Remove');
+                        button.setAttribute('onclick', 'removeRow(this)');
+
+                        td.appendChild(button);
+                    }
+                    else {
+                        var ele = document.createElement('input');
+                        ele.setAttribute('type', 'text');
+                        ele.setAttribute('value', '');
+
+                        td.appendChild(ele);
+                    }
+                }
+            }
+            function removeRow(oButton) {
+                var empTab = document.getElementById('empTable');
+                empTab.deleteRow(oButton.parentNode.parentNode.rowIndex);
+            }
+            function submit() {
+                var myTab = document.getElementById('empTable');
+                var arrValues = new Array();
+                for (row = 1; row < myTab.rows.length - 1; row++) {
+                    // loop through each cell in a row.
+                    for (c = 0; c < myTab.rows[row].cells.length; c++) {
+                        var element = myTab.rows.item(row).cells[c];
+                        if (element.childNodes[0].getAttribute('type') == 'text') {
+                            arrValues.push("'" + element.childNodes[0].value + "'");
+                        }
+                    }
+                }
+                document.getElementById('output').innerHTML = arrValues;
+            }
+        </script> --> -->
+
+
+
+
+
+
+
+
+        //-------------------------------------CHAPTER NO. 53-58--------------------------------------------------
+
+
+        <!-- <h1 style="font-size: 43px;">Modal Image Gallery</h1>
+        <img id="myImg1" src="images/1.jpg" class="img-thumbnail" 
+            style="width:100%;max-width:200px;max-height: 140px;">
+        <img id="myImg2" src="images/2.jpg" class="img-thumbnail" 
+            style="width:100%;max-width:200px;max-height: 135px;">
+        <img id="myImg2" src="images/3.jpg" class="img-thumbnail" 
+            style="width:100%;max-width:200px;max-height: 140px;">
+        <img id="myImg2" src="images/4.png" class="img-thumbnail" 
+            style="width:100%;max-width:200px;max-height: 135px;">
+        <img id="myImg2" src="images/5.jpg" class="img-thumbnail" 
+            style="width:100%;max-width:200px;max-height: 135px;">
+        <img id="myImg2" src="images/6.jpg" class="img-thumbnail" 
+            style="width:100%;max-width:200px;max-height: 135px;">
+        <img id="myImg2" src="images/7.png" class="img-thumbnail" 
+            style="width:100%;max-width:200px;max-height: 140px;">
+        <img id="myImg2" src="images/8.jpg" class="img-thumbnail" 
+            style="width:100%;max-width:200px;max-height: 140px;">
+        <img id="myImg2" src="images/9.jpg" class="img-thumbnail" 
+            style="width:100%;max-width:200px;max-height: 140px;">
+        <img id="myImg2" src="images/10.jpg" class="img-thumbnail" 
+            style="width:100%;max-width:200px;max-height: 140px;">
+        <img id="myImg2" src="images/11.jpg" class="img-thumbnail" 
+            style="width:100%;max-width:200px;max-height: 140px;">
+        <img id="myImg2" src="images/12.jpg" class="img-thumbnail" 
+            style="width:100%;max-width:200px;max-height: 140px;">
+        <img id="myImg2" src="images/13.jpg" class="img-thumbnail" 
+            style="width:100%;max-width:200px;max-height: 140px;">
+        <img id="myImg2" src="images/14.png" class="img-thumbnail" 
+            style="width:100%;max-width:200px;max-height: 140px;">
+        <img id="myImg2" src="images/15.jpg" class="img-thumbnail" 
+            style="width:100%;max-width:200px;max-height: 140px;">    
+    
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+        </div> -->
+    
+
+
+
+
+
+
+
+
+
+
+
+    <!-- -------------------------------------CHAPTER NO. 58-67---------------------------------------- -->
+    <!-- NO.1 -->
+    <!-- <div>
+        <h1> DOM </h1>
+        <div id="form-content" class="content">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" />
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" />
+            <label for="email">Email</label>
+            <input type="text" id="email" />
+        </div>
+        <div id="main-content" class="content">
+            <p class="render"> First Name : Alex</p>
+            <p class="render" id="lastName">Last Name: Bank</p>
+            <p class="render"> Email : alexbank@example.com</p>
+            <p class="render"> Country : Pakistan </p>
+            <p class="render"> contact : +92 300 1234567</p>
+        </div>
+    </div> -->
+
+    <script>
+        // //NO.1(i)
+        // var eField = document.getElementById("main-content");
+        // console.log(eField);
+
+        // //NO.1(ii)
+        // let menu = document.getElementById('main-content');
+        // let children = menu.children;
+        // console.log(children);
+
+        // //NO.1(iii)
+        // var dive = document.getElementsByClassName("render");
+        // console.log(dive[0].innerHTML)
+        // console.log(dive[1].innerHTML);
+        // console.log(dive[2].innerHTML);
+        // console.log(dive[3].innerHTML);
+        // console.log(dive[4].innerHTML);
+
+        // //NO.1(iv) 
+        // document.getElementById("first-name").setAttribute('value','Hassan Ahmed');
+
+        // //NO.1(v)
+        // document.getElementById("last-name").setAttribute('value','Khan');
+        // document.getElementById("email").setAttribute('value','hassanahmedkhan2018@gmail.com');
+
+        // //NO.2(i)
+        // var a = document.getElementById('form-content');
+        // console.log(a.nodeType);
+
+        // //NO.2(ii)
+        // var a = document.getElementById('lastName');
+        // console.log(a.nodeType);
+        // console.log(a.childNodes);
+
+        // //NO.2(iii)
+        // var a = document.getElementById('lastName');
+        // console.log(a.nodeType);
+
+        // //NO.2(iv)
+        // var menu = document.getElementById('main-content');
+        // console.log(menu.firstElementChild);
+        // console.log(menu.lastElementChild);
+
+        // //NO.2(v)
+        // var item = document.querySelector('#lastName');
+        // var prev = item.previousElementSibling;
+        // var next = item.nextElementSibling;
+        // console.log(prev);
+        // console.log(next);
+
+        // //No.2(vi)
+        // var z = document.getElementById('email');
+        // console.log(z.parentNode);
+        // console.log(z.nodeType);
+
+    </script>
+
+
+
+
+
+
+   
+
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>

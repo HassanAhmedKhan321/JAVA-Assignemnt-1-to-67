@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function favBrowser() {
+            var mylist=document.getElementById('myList');
+            document.getElementById('favorite').value=mylist.value;
+        }
+    </script>
+    <form>
+        Select your favorite browser:
+        <select id="myList" onchange="favBrowser()">
+            <option></option>
+            <option value="Apple">Apple</option>
+            <option value="Samsung">Samsung</option>  
+            <option value="Motorola">Motorola</option>
+            <option value="Nokia">Nokia</option>
+            <option value="Sony">Sony</option>
+            <option value="Haier">Haier</option>
+        </select>
+    </form>
+</body>
+</html>
